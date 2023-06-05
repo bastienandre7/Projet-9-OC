@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap");
+
+
 body {
-	max-width: 1920px;
+	max-width: 1400px;
 	margin: auto;
 }
 * {
-	font-family: 'Inter';
+	font-family: 'Inter', sans-serif;
 	font-style: normal;
 }
 .top-header {
@@ -80,7 +83,7 @@ body {
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
+	font-family: 'Spectral', sans-serif;
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
@@ -121,8 +124,8 @@ body {
 }
 .gallery-item {
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	width: 440px;
+	height: 440px;
 	object-fit: cover;
 	padding: .5em;
 }
@@ -137,20 +140,20 @@ body {
 }
 
 .quote {
-	font-family: 'Spectral';
+	font-family: 'Spectral', sans-serif;
 	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: Spectral, sans-serif;
 	font-style: italic;
 	font-weight: 300;
 
 }
 .quote__author {
-	font-family: Spectral;
+	font-family: Spectral, sans-serif;
 	font-weight: 800;
 	font-size: 22px;
 }
@@ -244,7 +247,31 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+.image-nina{
+	width: 100%;
+	height: 100%;
+}
 
+.image-camera{
+	width: 100%;
+	height: 100%;
+}
+
+.ryoji-iwata{
+	width: 100%;
+	height: 100%;
+}
+
+.zbi {
+	width: 100%;
+	height: 100%;
+}
+
+
+.logo-instagram{
+	width: 100%;
+	height: 100%;
+}
 
 
 @media all and (max-width: 1180px) {
@@ -260,6 +287,11 @@ input[type="submit"] {
 	}
 	#about-me h6, #about-me p {
 		width: 100%;
+	}
+
+	.gallery-item {
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -320,6 +352,11 @@ input[type="submit"] {
 		right: 0;
 		z-index: -1;
 	}
+
+	.gallery-item {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 @media all and (max-width: 650px) {
@@ -354,6 +391,11 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+	}
+
+	.gallery-item {
+		width: 100%;
+		height: 100%;
 	}
 }
 
