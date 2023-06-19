@@ -13,7 +13,7 @@
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Nina Carducci"/>
 	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="http://www.ninacarducci.com/"/>
+	<meta property="og:url" content="http://www.ninacarducci.com"/>
 	<meta property="og:image" content="./assets/new-images/nina/nina-256.webp"/>
 	<meta property="og:description" content="Bonjour, je suis Nina Carducci, photographe, et voici mon site web !"/>
 
@@ -27,6 +27,7 @@
 
 	<meta name="description" content="Bonjour, je suis Nina Carducci, photographe, et voici mon site web !">
 	<title>Nina Carducci</title>
+
 </head>
 <body>
 <div class="top-header">
@@ -51,13 +52,13 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img loading="eager" src="./assets/new-images/slider/ryoji-iwata/ryoji-iwata-300.webp" class="d-block w-100 ryoji-iwata" alt="photographie de ryoji iwata">
+				<img loading="eager" src="./assets/new-images/slider/reduct/ryoji-iwata-1140.webp" class="d-block w-100 ryoji-iwata" alt="photographie de ryoji iwata">
 			</div>
 			<div class="carousel-item">
-				<img loading="eager" src="./assets/new-images/slider/nicolas-green/tw93q-1b62q.webp" class="d-block w-100" alt="photographie de nicolas green">
+				<img loading="eager" src="./assets/new-images/slider/reduct/nicholas-green-75-png.webp" class="d-block w-100" alt="photographie de nicolas green">
 			</div>
 			<div class="carousel-item">
-				<img loading="eager" src="./assets/new-images/slider/tl9c8-lsfqq.webp" class="d-block w-100" alt="photographie de edwards cisneros">
+				<img loading="eager" src="./assets/new-images/slider/reduct/edward-cisneros-75-png.webp" class="d-block w-100" alt="photographie de edwards cisneros">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -70,9 +71,9 @@
 		</button>
 	</div>
 </div>
-<div id="about">
+<div itemscope itemtype="https://schema.org/Person" id="about">
 	<div class="picture left">
-		<img class="image-nina" src="./assets/new-images/nina/nina-256.webp" alt="photographie de moi même">
+		<img itemprop="image" class="image-nina" src="./assets/new-images/nina/nina-256.webp" alt="photographie de moi même">
 	</div>
 	<div id="about-me">
 		<h3 class="about-me__title">A propos de moi</h3>
@@ -182,5 +183,24 @@
 	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script defer src="./assets/scripts.js"></script>
 	<script defer src="./assets/maugallery.min.js"></script>
+	<script defer type="application/ld+json">
+		{
+		"@context": "https://schema.org",
+		"@type": "ProfessionalService",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"streetAddress": "68 avenue Alsace-Lorraine"
+		},
+		"name": "Nina Carducci",
+		"openingHours": "Lu-Ve 10:00-19:00",
+		"telephone": "05 56 67 78 89",
+		"priceRange": "$$",
+		"keywords" : "photographe, photo, Bordeaux",
+		"image": "./assets/new-images/nina/nina-256.webp",
+		"url": "http://www.ninacarducci.com"
+		}
+		</script>
 </body>
 </html>
